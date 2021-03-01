@@ -1,0 +1,48 @@
+@import "./reset.css";
+*{
+  box-sizing: border-box;
+}
+.list{
+  font-size: 0;
+  
+}
+.list-item{
+  display: inline-block;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: #47986d;
+  border:1px solid #3c805b;
+}
+.link{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+}
+.sub-list-item{ 
+  display: block;
+}
+.sub-list{
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+}
+.list-item:hover{
+  background-color: #3c805b;
+}
+.list-item:hover .sub-list{
+  display: block;
+}
+.categories-sub-list{
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+.sub-list-item:hover .categories-sub-list{
+  display: block;
+}
